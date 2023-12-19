@@ -16,7 +16,7 @@ class User < ApplicationRecord
    end
 
    # Add the meta programing for we can use it the number of method reduce 
-   # This method are use in batter user practice 
+   # This method are use in batter programing user practice 
 
       ROLES.each do |role_name|
         define_method "#{role_name}?" do 
