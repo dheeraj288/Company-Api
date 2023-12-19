@@ -3,14 +3,13 @@ class Api::V1::CompaniesController < ApplicationController
 	before_action :set_company, only: [:show, :update, :destroy]
 
 	def index
-		  @companies = Company.all
+		@companies = Company.all
 		 # @companies = current_user.companies
-		render json: @companies, status: :ok
-
+		 render json: @companies, status: :ok
 	end
 
 	def show
-		render json: @company, status: :ok
+			render json: @company, status: :ok
 	end
 
 	def create
